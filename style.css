@@ -1,0 +1,95 @@
+body {
+  padding: 40px;
+}
+
+/* CSS GRID */
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "grid1 grid1 grid2 grid2"
+    "grid1 grid1 grid3 grid4";
+}
+
+.grid1 {
+  grid-area: grid1;
+}
+
+.grid2 {
+  grid-area: grid2;
+}
+
+.grid3 {
+  grid-area: grid3;
+}
+
+.grid4 {
+  grid-area: grid4;
+}
+
+.grid-item {
+  background-color: tomato;
+  padding: 100px;
+  color: white;
+  text-align: center;
+}
+
+/* -----------------FLEX GRID----------------- */
+
+/* footer {
+  padding: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex {
+  background-color: rgb(38, 181, 242);
+  padding: 50px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+} */
+
+/* ------------------ITEM-------------------- */
+
+.item {
+  background-color: rgb(30, 159, 240);
+  width: 100%;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  padding: 10vh 0;
+}
+
+/* ------------------ITEM--------------------- */
+
+.flex {
+  display: flex;
+  min-height: 50vh;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+}
+
+.right-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-side > * {
+  width: 100%;
+}
+
+.left-side,
+.right-bottom,
+.right-top {
+  display: flex;
+}
